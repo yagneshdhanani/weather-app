@@ -98,6 +98,6 @@ app.get("*", (req, res) => {
     })
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is up on port no ${PORT}`);
+app.listen(port, () => {
+    console.log(`Server is up on port no ${port}`);
 });
