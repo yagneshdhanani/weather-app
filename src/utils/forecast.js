@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.message) {
             callback("URL ma locho 6e baka!", undefined)
         } else {
-            callback(undefined, `${body.daily[0].weather[0].description} It is currently ${body.current.temp} degrees out. There is ${body.current.clouds}% chance to rain.`);
+            callback(undefined, `It is currently ${body.current.temp} degrees out. ${body.daily[0].weather[0].description}`);
         }
     })
 };
